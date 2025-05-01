@@ -1,0 +1,66 @@
+Pada setiap task selalu diawali dengan line code "!gdown --id (ID file drive)" untuk mendownload file ke dalam local google collab. Line ini digunakan karena file yang digunakan terlalu besar dan tidak dapat di upload di github.
+
+Pada folder ini, berisi jawaban soal - soal UTS dari Regression Task, Classification Task, dan Regression Task.
+jawaban berupa hasil codingan pada .ipynb dan dikerjakan pada google collab.
+
+Regression Task
+hasil Regression dari file RegresiUTSTelkom.csv
+menggunakan Feature Selection (Constant-Quasi-Constant-Duplicates, Correlation, Mutual Information, ChiSquare Test, ANOVA/MANOVA,etc) dan Feature Engineering(Transformasi Data, Label Encoding, One-hot Encoding, etc).
+model - model yang digunakan adalah: modul scikit‑learn meliputi Logistics Klasifikasi, Decision Tree, KNeighbors, Bagging / Boosting serta SVMLinearRegression, PolynomialFeatures,with LinearRegression, DecisionTreeRegressor, KNeighborsRegressor, BaggingRegressor, model boosting seperti AdaBoostRegressor atau GradientBoostingRegressor, serta SVR.
+dari hasil pengolahan:
+1. Bagging Regressor merupakan model yang terbaik karena:
+  MSE terkecil (232.46) → error kuadrat paling kecil.
+  RMSE terkecil (15.25) → rata-rata error prediksi paling kecil.
+  R² terbesar (0.519) → model mampu menjelaskan 51.9% variasi data.
+
+Classification Task
+hasil Classification dari file KlasifikasiUTS.csv
+menggunakan Feature Selection (Constant-Quasi-Constant-Duplicates, Correlation, Mutual Information, ChiSquare Test, ANOVA/MANOVA,etc) dan Feature Engineering(Transformasi Data, Label Encoding, One-hot Encoding, etc).
+model - model yang digunakan adalah: modul scikit‑learn meliputi Logistics Klasifikasi, Decision Tree, KNeighbors, Bagging / Boosting serta SVM.
+dari hasil pengolahan:
+1. Model yang direkomendasi: K-Nearest Neighbors (KNN). Hal ini dibuktikan dengan hasil perbandingan dari model - model lainnya, KNN menunjukkan data yang terbaik diantara model - model lainnya.
+Model Performance Comparison:
+                 Model  Accuracy  Precision    Recall  F1 Score
+0  Logistic Regression  0.999189   0.999126  0.999189  0.999095
+1        Decision Tree  0.998978   0.999013  0.998978  0.998994
+2  K-Nearest Neighbors  0.999489   0.999476  0.999489  0.999448 <--- memberikan hasil yang terbaik.
+3                  SVM  0.999418   0.999410  0.999418  0.999358
+4             AdaBoost  0.999207   0.999160  0.999207  0.999176
+5              Bagging  0.999454   0.999430  0.999454  0.999414
+
+Clustering Task
+hasil Clustering dari file UTSclustering.csv
+menggunakan Feature Selection (Constant-Quasi-Constant-Duplicates, Correlation, Mutual Information, Chi-Square Test, ANOVA/MANOVA, etc) dan Feature Engineering (Transformasi Data, Standardisasi, Normalisasi, etc).
+model - model yang digunakan adalah: modul scikit-learn meliputi KMeans, AgglomerativeClustering, DBSCAN, GaussianMixture serta SpectralClustering.
+dari hasil pengolahan:
+1. Model terbaik adalah KMeans.
+  KMeans dipilih karena memiliki hasil :
+    Silhouette Score tertinggi (0.641) → cluster sangat terpisah dengan baik.
+    Davies-Bouldin Index terendah (0.456) → cluster sangat kompak dan berbeda satu sama lain.
+    Calinski-Harabasz Score tertinggi (9188.13) → distribusi antar cluster sangat jelas.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
