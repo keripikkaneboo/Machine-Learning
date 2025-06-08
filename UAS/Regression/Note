@@ -1,0 +1,12 @@
+Regression#1 
+saya mencoba melatih model dengan target kolom pertama: 
+target_col = df.select_dtypes(include='int').columns[0]
+korelasi antar fitur juga disesuaikan dengan korelasi dengan target > 0.2.
+selected_features = correlations[correlations.abs() > 0.2].index.tolist()
+dengan begitu, hasil yang didapat kurang memuaskan dan bahkan tidak bisa dikatakan layak.
+
+Regression#2
+pada file ini, saya mencoba untuk memisahkan feature engineering antara TensorFlow dan Torch.
+hasilnya cukup memuaskan, untuk TensorFLow rata - rata lossnya ada pada 76.00 (dapat dilihat di monitoring proses bagian TensorFlow).
+dan untuk Torch range lossnya dari 80.00 - 70.00, merupakan angka yang cukup kecil.
+Hasil yang diberikan masih kurang, namun jika dibandingkan dengan hasil pada Regression#1, ini merupakan peningkatan yang cukup signifikan.
