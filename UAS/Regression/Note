@@ -10,3 +10,7 @@ pada file ini, saya mencoba untuk memisahkan feature engineering antara TensorFl
 hasilnya cukup memuaskan, untuk TensorFLow rata - rata lossnya ada pada 76.00 (dapat dilihat di monitoring proses bagian TensorFlow).
 dan untuk Torch range lossnya dari 80.00 - 70.00, merupakan angka yang cukup kecil.
 Hasil yang diberikan masih kurang, namun jika dibandingkan dengan hasil pada Regression#1, ini merupakan peningkatan yang cukup signifikan.
+
+hal ini dapat terjadi karena beberapa kemungkinan:
+1. file diolah kurang baik dan banyaknya value yang missing atau NaN.
+2. file memang tidak tertata rapih dan berantakan karena banyaknya data yang ada di dalam file.
