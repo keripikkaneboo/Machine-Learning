@@ -24,4 +24,5 @@ dapat dilihat rata - rata nilai yang muncul diatas 0.80 (80%).
 pada folder ini, saya mencoba melatih dengan model CNN dengan iterasi epoch 20.
 hasil yang dikeluarkan sudah cukup memuaskan (kurang lebih 0.70 (70%)).
 hasil ini dapat ditingkatkan kembali dengan menambah nilai epoch.
+dengan hasil diatas, saya mengambil F1-Score sebagai model terbaik, baik dalam bentuk macro avg maupun weighted avg.
 di dalam folder terdapat note yang dapat menjelaskan secara detail.
