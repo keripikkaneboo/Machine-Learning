@@ -1,5 +1,0 @@
-Dengan epoch = 20, saya mendapatkan tingkat akurasi sampai 74% (pada epoch ke 20). ini dapat ditingkatkan lagi sampai 80 - 90% dengan epoch = 50.
-
-berdasarkan classification report, accuracy pada macro avg berada di 0.72 (72%) dan accuracy pada weighted avg berada di 0.74 (74%).
-nilai tersebut sudah cukup untuk model menentukan dan mengklasifikasi gambarnya. memang masih belum sempurna dan ada beberapa yang miss.
-masalah ini bisa di atasi dengan meningkatkan iterasi pembelajaran model dengan mengubah nilai epoch dari 20 ke 50 atau lebih.
