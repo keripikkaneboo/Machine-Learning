@@ -1,0 +1,27 @@
+Sama seperti pada UTS, setiap sesi diawali dengan "!gdown" untuk mendownload file dari google drive.
+
+1. Regresi
+terdapat 2 percobaan untuk Regresi, yang pertama dengan menggabungkan preprocessing dan langsung train data menggunakan 
+MLP TensorFlow dan Torch. keduanya memberikan hasil yang kurang memuaskan, namun ini dapat dihasilkan karena file yang kurang
+diolah dengan baik atau filenya yang berantakan. 
+pada folder terdapat notes yang dapat menjelaskan secara detail.
+
+2. Classification
+Hasil yang diberikan pada Classification cukup memuaskan.
+=== Classification Report ===
+              precision    recall  f1-score   support
+
+         0.0     0.9997    0.9997    0.9997     56864
+         1.0     0.8144    0.8061    0.8103        98
+
+    accuracy                         0.9994     56962
+   macro avg     0.9070    0.9029    0.9050     56962
+weighted avg     0.9993    0.9994    0.9993     56962
+
+dapat dilihat rata - rata nilai yang muncul diatas 0.80 (80%).
+
+3. FIsh Classification
+pada folder ini, saya mencoba melatih dengan model CNN dengan iterasi epoch 20.
+hasil yang dikeluarkan sudah cukup memuaskan (kurang lebih 0.70 (70%)).
+hasil ini dapat ditingkatkan kembali dengan menambah nilai epoch.
+di dalam folder terdapat note yang dapat menjelaskan secara detail.
